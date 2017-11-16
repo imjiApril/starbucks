@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>스타벅스 코리아</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="title">
+        <h1>STARBUCKS</h1>
+      </div>
+      <!-- 토글메뉴버튼 -->
+      <input type="checkbox" id="btn_menu">
+      <label for="btn_menu" class="btn_menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <form action="" class="search">
+          <input type="text">
+          <button type="submit">
+            <span class="skip">검색</span>
+          </button>
+        </form>
+        <ul class="gnb_nav">
+          <li>
+            <a href="#">COFFEE</a>
+            <ul>
+              <li><a href="#">커피</a></li>
+              <li><a href="#">나와 어울리는 커피</a></li>
+              <li><a href="#">스타벅스 리저브<sup>TM</sup></a></li>
+            </ul>
+          </li>
+          <li><a href="#">MENU</a>
+            <ul>
+              <li><a href="#">음료</a></li>
+              <li><a href="#">푸드</a></li>
+              <li><a href="#">상품</a></li>
+              <li><a href="#">카드</a></li>
+            </ul>
+          </li>
+          <li><a href="#">STORE</a>
+            <ul>
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">드라이브 드루 매장</a></li>
+              <li><a href="#">스타벅스 리저브<sup>TM</sup>매장</a></li>
+              <li><a href="#">카드</a></li>
+            </ul>
+          </li>
+          <li><a href="#">RESPONSIBILITY</a>
+            <ul>
+              <li><a href="#">사회 공헌 캠패인 소개</a></li>
+              <li><a href="#">지역사회 참여활동</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="util_nav">
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">My Starbucks</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Find a Store</a></li>
+        </ul>
+      </nav>
+      <!-- 멤버쉽메뉴 -->
+      <input type="checkbox" id="btn_member">
+      <label for="btn_member" class="btn_member fa">
+        <span class="skip">멤버쉽메뉴</span>
+      </label>
+      <div class="member_nav row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="row wrap">
+            <div class="col-xs-3 col-sm-3">
+              <img src="img/login.png" alt="">
+            </div>
+            <div class="col-xs-9 col-sm-9">
+              <p>
+                <strong>스타벅스커피 코리아 회원이 아니세요?</strong>
+                스타벅스커피 코리아 회원만의 특별한 혜택을 누릴 수 있습니다.
+              </p>
+              <div class="btn_group">
+                <button>로그인</button>
+                <button>회원가입</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="row wrap">
+            <div class="col-xs-3 col-sm-3">
+              <img src="img/card.png" alt="">
+            </div>
+            <div class="col-xs-9 col-sm-9">
+              <p>
+                <strong>스타벅스 카드를 가지고 계신가요?</strong>
+                스타벅스 카드를 등록하시면, 마이 스타벅스 리워드만의 특별한 혜택을 누릴 수 있습니다.
+              </p>
+              <div class="btn_group">
+                <button>카드등록</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header><!-- header end -->
+
+    <!-- section -->
+    <section>
+      <!-- 신제품광고 -->
+      <article class="main_ad">
+        <div class="row">
+          <div class="emblem">
+            <img src="img/emblem.png" alt="show your flavor">
+            <a href="#">자세히보기</a>
+          </div>
+          <div class="flavor">
+            <img src="img/bev1_cup.png" alt="슈크림딸기프라푸치노 이미지" class="flavor1_img">
+            <img src="img/bev1_txt.png" alt="슈크림딸기프라푸치노" class="flavor1_text">
+          </div>
+        </div>
+        <a href="#" class="nitro_view">
+          <img src="img/layer_nitro.png" alt="nitro cold brew 자세히보기">
+        </a>
+      </article>
+
+      <!-- 제품소개 -->
+      <article class="product">
+        <!-- 제품 정보 -->
+        <div class="product_info">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="img_box">
+                <img src="img/fav_prod_txt01.png" alt="pick your favorite">
+                <img src="img/fav_prod_txt02.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요.">
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <img src="img/fav_prod_img.png" alt="제품이미지">
+            </div>
+          </div>
+        </div>
+
+        <!-- 제품 이미지 -->
+        <div class="product_gallery">
+          <h2>새로나온 제품</h2>
+          <ul class="row">
+            <!-- li*4>div[class=wrap]>(a[href=#]>img[src=img/coffee$.jpg])(dl>(dt)(dd)) -->
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/coffee1.jpg" alt="나이트로 콜드 브루">
+                <dl>
+                  <dt>나이트로 콜드 브루</dt>
+                  <dd>Nitro Cold Brew</dd>
+                </dl>
+                <a href="#" class="fa">
+                  <span class="skip">자세히보기</span>
+                </a>
+              </div>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/coffee2.jpg" alt="바닐라 크림 콜드 브루">
+                <dl>
+                  <dt>바닐라 크림 콜드 브루</dt>
+                  <dd>Vanilla Cream Cold Brew</dd>
+                </dl>
+                <a href="#" class="fa">
+                  <span class="skip">자세히보기</span>
+                </a>
+              </div>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/coffee3.jpg" alt="콜드 브루">
+                <dl>
+                  <dt>콜드 브루</dt>
+                  <dd>Cold Brew</dd>
+                </dl>
+                <a href="#" class="fa">
+                  <span class="skip">자세히보기</span>
+                </a>
+              </div>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/coffee4.jpg" alt="콜드 브루 라떼">
+                <dl>
+                  <dt>콜드 브루 라떼</dt>
+                  <dd>Cold Brew Latte</dd>
+                </dl>
+                <a href="#" class="fa">
+                  <span class="skip">자세히보기</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 리저브 커피 -->
+      <article class="reserve">
+        <h2>스타벅스 리저브<sup>TM</sup></h2>
+        <!-- 리저브 정보 -->
+        <div class="reserve_info">
+          <!-- ul>li*4>div[class=wrap]>(img[src=img/icon_reserve_info$.png])(p) -->
+          <ul>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/icon_reserve_info1.png" alt="">
+                <p>clover</p>
+              </div>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/icon_reserve_info2.png" alt="">
+                <p>black eagle</p>
+              </div>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/icon_reserve_info3.png" alt="">
+                <p>siphon</p>
+              </div>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+              <div class="wrap">
+                <img src="img/icon_reserve_info4.png" alt="">
+                <p>poc</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 리저브 매장 -->
+        <div class="reserve_store">
+          <!-- 회전 -->
+          <div class="rotate">
+            <img src="img/reserve_medal01.png" alt="" class="front">
+            <div class="back">
+              <img src="img/reserve_medal02.png" alt="">
+              <a href="#">매장보기</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section><!-- section end -->
+
+    <!-- footer -->
+    <footer>
+      <!-- 배너 -->
+      <div class="banner">
+        <div class="wrap">
+          <input type="checkbox" id="btn_banner">
+          <label for="btn_banner" class="fa">
+            <span class="skip">정지/재생</span>
+          </label>
+          <ul>
+            <li><img src="img/banner1.jpg" alt="해당 배너의 이름 작성.."></li>
+            <li><img src="img/banner2.jpg" alt="..."></li>
+            <li><img src="img/banner3.jpg" alt="..."></li>
+            <li><img src="img/banner4.jpg" alt="..."></li>
+            <li><img src="img/banner5.jpg" alt="..."></li>
+            <li><img src="img/banner6.jpg" alt="..."></li>
+            <li><img src="img/banner1.jpg" alt="..."></li>
+            <li><img src="img/banner2.jpg" alt="..."></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 정보 -->
+      <ul class="info">
+        <li>사업자등록번호 201-81-21515</li>
+        <li>(주)스타벅스커피 코리아 대표이사 이석구</li>
+        <li>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</li>
+        <li>개인정보 책임자 : 강기원</li>
+      </ul>
+      <span>ⓒ 2015 Starbucks Coffee Company. All Rights Reserved.</span>
+    </footer><!-- footer end -->
+  </body>
+</html>
